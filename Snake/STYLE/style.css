@@ -1,0 +1,70 @@
+body {
+  background-image: url("./IMGS/WormBackground.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.grid {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 4px solid #333;
+  border-style: solid;
+  margin: 10% auto;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.snake {
+  background-color: pink;
+}
+
+.apple {
+  background-color: red;
+}
+
+.start,
+.reset,
+.score-board {
+  font-family: "Press Start 2P", cursive;
+}
+
+.start,
+.reset {
+  outline: none;
+  border: none;
+}
+
+.start {
+  position: absolute;
+  cursor: pointer;
+  height: 3rem;
+  width: 10rem;
+  top: 14%;
+  right: 10%;
+}
+.reset {
+  position: absolute;
+  cursor: pointer;
+  height: 3rem;
+  width: 10rem;
+  top: 22%;
+  right: 10%;
+}
+
+.start:focus,
+.reset:focus {
+  background-color: #6db858;
+}
+
+.score-board {
+  color: white;
+  position: absolute;
+  top: 24%;
+  right: 10%;
+  max-width: 14rem;
+  padding: 2rem 2rem;
+}
